@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('assets/fonts/static/Figtree-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium*/
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+    font-weight: 900;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 2px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 2px black;
+    border-radius: 5%;
+    background-color: white;
+
+    /* Added on hover animation for personal enjoyment */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.blog-card:hover {
+    transform: scale(1.02);
+    box-shadow: 12px 12px 2px black;
+
+    border-color: #999;
+}
+
+.heading-image-container {
+    width: 100%;
+}
+
+.heading-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5%;
+}
+
+
+.category {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+    width: 20%;
+}
+
+.category-border {
+    flex: 1;
+    background-color: hsl(47, 88%, 63%);
+    border: 1px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border-radius: 10%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.category-text {
+    font-family: 'Figtree';
+    font-weight: 900;
+    background-color: hsl(47, 88%, 63%);
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.publish-date {
+    font-family: 'Figtree';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+h2 {
+    font-family: 'Figtree';
+    font-weight: 900;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.description-gray {
+    font-family: 'Figtree';
+    font-weight: 500;
+    color: hsl(0, 0%, 42%);
+}
+
+.user-profile-combo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile-picture {
+    height: 50px;
+    width: 50px;
+}
+
+.user-profile-combo p {
+    font-family: 'Figtree';
+    font-weight: 900;
+    padding: 10px;
+}
